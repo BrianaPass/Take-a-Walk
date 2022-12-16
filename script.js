@@ -56,7 +56,7 @@
 
 
 
-/*const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let labelIndex = 0;
 
 function initMap() {
@@ -85,4 +85,4 @@ function addMarker(location, map) {
   });
 }
 
-window.initMap = initMap;*/
+window.initMap = initMap;
