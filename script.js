@@ -5,7 +5,7 @@ fetch(url)
 .then((data) => console.log(data))
 
 var data1 = data 
-var spotifyAPIKey = "fa3793ba6d7a4e8d88642fe7bbcba591"//Setting the API Key so we can be lazy. Add it to a string with (+ spotifyAPIKey)
+var spotifyAPIKey = "fa3793ba6d7a4e8d88642fe7bbcba591"//Setting the API Key so we can be lazy. Add it to a string with + spotifyAPIKey)
 /*Spotify API Key will go below*?*/
 var url = ""
 /*axios url = ""*/
