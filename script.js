@@ -103,7 +103,27 @@ function GetSpotifyUrl(url){window.open(url)()}
 
 
 
-
+/*navigator.geolocation.getCurrentPosition(function(position) {
+    var lat = position.coords.latitude;
+    var lng = position.coords.longitude;
+    // Use the latitude and longitude to create a new map
+  });
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: lat, lng: lng},
+    zoom: 15
+  });
+  var startMarker = new google.maps.Marker({
+    position: {lat: lat, lng: lng},
+    map: map,
+    label: 'Start'
+  });
+  
+  var endMarker = new google.maps.Marker({
+    position: {lat: destLat, lng: destLng},
+    map: map,
+    label: 'End'
+  }); */
+  
 
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let labelIndex = 0;

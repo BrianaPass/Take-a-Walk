@@ -9,14 +9,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="assets\style.css">
 </head>
-
-<div class="center-align">
-  <h1 class="col s12">Take a Walk</h1>
+<header>
+<div class="center-align" video src="assets/v1.mp4">
+  <h1 class="col s12"  video src="assets/v1.mp4">Take a Walk</h1>
   <h3 class="">The world is your oyster, take the time to go shuck yourself?</h3>
 </div>
+</header>
 <body>
 <div class="container-row col s6">
-      <div class="map center-align">
+      <div class="map center-align" id="map">
         <iframe
   width="100%"
   height="450"
@@ -31,23 +32,24 @@
   <textarea class="form-control center-align" id="alltext" rows="5" maxlength="500" placeholder = "Enter your starting point here"></textarea>
 </div>
 <p>
-  <button class="btn btn-lg btn-primary btn-success s3" id="start">Set starting point</button>
+  <button class="btn btn-lg btn-primary btn-success s3 hoverable" id="start">Set starting point</button>
 </p>
 <div class = "container ">
   <h5>Please select how long you would like to walk for?</h5>
 <div class = "row">
   <div class = "col s4 short"><!--short is the class identifier for this route-->
-    <button class ="btn">Short Route</button>
+    <button class ="btn hoverable">Short Route</button>
   </div>
   <div class = "col s4 medium"> <!--medium is the class identifier for this route-->
-    <button class ="btn">Medium Route</button>
+    <button class ="btn hoverable">Medium Route</button>
   </div>
   <div class = "col s4 long"> <!--long is the class identifier for this route-->
-    <button class ="btn">Long Route</button>
+    <button class ="btn hoverable">Long Route</button>
   </div>
 </div>
 </div>
-<a href="mood.html" class="btn">Go to Mood</a>
+<a href="mood.html" class="btn hoverable">Go to Mood</a> <!--This links to the mood page-->
   </body>
   <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDEcXU6u6I2VVF1Ir5oGx0oR_0TBc2xGI"></script>
 </html>
