@@ -90,10 +90,31 @@ function GetSpotifyUrl(url){window.open(url)()}
 
 
 
-
-
-
-
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: {lat: 40.8075, lng: -73.9626}
+  });
+  var directionsRenderer = new google.maps.DirectionsRenderer({
+    map: map,
+    suppressMarkers: true,
+    preserveViewport: true
+  });
+  var directionsService = new google.maps.DirectionsService();
+  function getDirections(start, end) {
+    var request = {
+      origin: start,
+      destination: end,
+      travelMode: 'WALKING'
+    };
+  
+    directionsService.route(request, function(response, status) {
+      if (status === 'OK') {
+        directionsRenderer.setDirections(response);
+      } else {
+        console.error('Directions request failed due to ' + status);
+      }
+    });
+  }
 
 
 
@@ -125,7 +146,7 @@ function GetSpotifyUrl(url){window.open(url)()}
   }); */
   
 
-const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+/*const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let labelIndex = 0;
 
 function initMap() {
@@ -152,7 +173,7 @@ function addMarker(location, map) {
     label: labels[labelIndex++ % labels.length],
     map: map,
   });
-}
+}*/
 /*
 window.initMap = initMap;
 var object = 

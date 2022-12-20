@@ -21,6 +21,7 @@
         <iframe
   width="100%"
   height="450"
+  class="map"
   style="border:0"
   loading="lazy"
   allowfullscreen
@@ -42,6 +43,9 @@
     <button class ="btn-large waves-effect waves-light hoverable">Long Route</button>
   </div>
   </div>
+  <button onclick="getDirections(new google.maps.LatLng(40.8075, -73.9626), new google.maps.LatLng(40.8108, -73.9521))">
+    Show Short Route
+  </button>
 </div>
 </div>
 <a href="mood.html" class="btn-large hoverable waves-effect waves-light s12">Go to Mood</a> <!--This links to the mood page-->
