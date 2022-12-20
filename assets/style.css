@@ -1,8 +1,12 @@
 .body{
+    background: "assets\pexels-fidan-nazim-qizi-11741251.jpg" no-repeat center center fixed;
+    background-size: cover;
+}
+
+.body{
     background-size: cover;
 }
 
   .btn{
     background-color: green;
   }
-
